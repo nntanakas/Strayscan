@@ -1,0 +1,202 @@
+<?php
+session_start();
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stray Scans</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-paw"></i> Stray Scans </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#contact">contact</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-cat" id="login-btn"></div>
+    </div>
+	<form action="" class="login-form">
+	<h3><span>Quote of the Day:</span>
+	Saving one pet will not change the world, but surely for that one pet, the world will change forever.</h3>
+        
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3> <span>hi</span> welcome to Stray Scans </h3>
+        <a href="#about" class="btn">Learn more</a>
+    </div>
+
+    <img src="image/bottom_wave.png" class="wave" alt="">
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+  
+
+    <div class="content">
+        <h3>Stra<span>y</span>scans</h3>
+        <p>StrayScans is an application that focuses on the protection of city animals.​
+
+​
+
+Users of StrayScans will be able to create an account for access to information provided by StrayScans.​ Take a picture of a stray animal and provide its last seen location.​ Submit an adoption form, in order to adopt a stray.​ 
+, report lost pets along with last known location and a description in case they could not submit a photo.​
+ Aldo you can leave a comment on what the application might be lacking, or if they need help and send it to the administrators.​</p>
+        <a href="about.html" class="btn">read more</a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> our <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-dog"></i>
+            <h3>Scan now</h3>
+			<h2>Take a picture of a stray animal and report its location.</h2>
+            <a href="scanNow.php" class="btn">Click here -></a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-cat"></i>
+            <h3>Lost Pets</h3>
+			<h2>Notifications for lost pets within 200 metres of your location.</h2>
+            <a href="lostPets.html" class="btn">Click here -></a>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-paw"></i>
+            <h3>Adopt now</h3>
+			<h2>Schedule an adoption of a stray.</h2>
+            <a href="adoptNow.html" class="btn">Click here -></a>
+        </div>
+
+
+</section>
+
+<!-- services section ends -->
+
+<!-- contact section starts -->
+<section class="contact" id="contact">
+
+    <div class="image">
+        <img src="image/contact_img.png" alt="">
+    </div>
+
+	
+	<form action="process-form.php" method="post">
+        <label for="name"><h2>your email</h2></label>
+        <input type="text" id="name" name="name">
+        <label for="message"><h2>Message</h2></label>
+        <textarea id="message" name="message"></textarea>
+        <label for="priority"><h2>Priority</h2></label>
+        <select id="priority" name="priority">
+            <option value="1">Low</option>
+            <option value="2" selected>Medium</option>
+            <option value="3">High</option>
+        </select>
+        <fieldset>
+            <legend><h2>Type</h2></legend>
+            <label>
+                <input type="radio" name="type" value="1" checked>
+               Question
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="type" value="2">
+                Adoption
+            </label>
+        </fieldset>
+        <label>
+            <input type="checkbox" name="terms">
+          I agree to the terms and conditions</label>
+		<li><a href="termsOfService.html"><span>Terms and Conditions</span></a></li>
+        <br>
+        <button>Send</button>
+    </form>
+
+</section>
+<!-- contact section ends -->
+<section class="footer">
+
+    <img src="image/top_wave.png" alt="">
+
+    <div class="share">
+        <a href="#" class="btn"> <i class="fab fa-facebook-f"></i> facebook </a>
+        <a href="#" class="btn"> <i class="fab fa-twitter"></i> twitter </a>
+        <a href="#" class="btn"> <i class="fab fa-instagram"></i> instagram </a>
+        <a href="#" class="btn"> <i class="fab fa-linkedin"></i> linkedin </a>
+        <a href="#" class="btn"> <i class="fab fa-pinterest"></i> pinterest </a>
+    </div>
+
+    <div class="credit"> created by <span> Strayscans </span> | all rights reserved! </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
